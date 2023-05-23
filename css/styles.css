@@ -24,8 +24,8 @@ header {
 }
 
 .container {
-    width: 100px;
-    min-width: 960px;
+    width: 100%;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -138,6 +138,7 @@ header {
 
 #games {
     background-color: var(---color-light-grey);
+    max-height: 1300px;
 }
 
 #games h2 {
@@ -148,43 +149,117 @@ header {
     text-align: center;
 }
 
-.container-card-game {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-game {
-    display: flex;
-    flex-direction: column;
+#games img {
     width: 300px;
-    height: 326px;
-}
-
-.card-game img {
+    height: 168.54;
     border-radius: 8px 8px 0 0;
 }
 
-.content-card-game {
-    background-color: var(---color-white);
-    height: 156px;
-    border-radius: 0 0 8px 8px;
+.container-card-game {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
 }
 
-.content-card-game h3 {
+.card-game {
+    height: 326px;
+    background-color: var(---color-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+}
+
+.content-card-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-card-game {
     font-size: 18px;
     color: var(---color-dark-grey);
-    text-align: center;
-    margin-top: 27.50px;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .description {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 13px;
+}
+
+.description p {
     font-size: 12px;
+    color: var(---color-dark-grey);
 }
 
 .description-complement {
-    color: var(---color-green);
     font-size: 14px;
+    color: var(---color-green);
+    font-weight:700;
+    font-style: normal;
+    margin-right: 3px;
+}
+
+.game-note {
+    font-size: 36px;
+    color: var(---color-green);
     font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.title-form {
+    font-size: 36px;
+    color: var(---color-dark-grey);
+    margin-top: 39px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.card-form {
+    background-color: var(---color-light-grey);
+    border-radius: 8px;
+    width: 790px;
+    height: 522px;
+    margin-bottom: 61px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.taxt-box {
+    display: flex;
+    flex-direction: column;
+    width: 642px;
+    height: 120px;
+    margin-top: 52px;
+    justify-content: space-between;
+}
+
+.box-name {
+    height: 50px;
+    border: 1px solid var(---color-dark-grey);
+    border-radius: 4px;
+}
+
+.box-email {
+    height: 50px;
+    border: 1px solid var(---color-dark-grey);
+    border-radius: 4px;
+}
+
+::placeholder {
+    font-size: 16px;
+    padding-left: 22px;
+}
+
+.alternative-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 0px;
+    padding-left: 0px;
 }
