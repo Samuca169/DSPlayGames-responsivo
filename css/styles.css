@@ -226,40 +226,116 @@ header {
     margin-bottom: 61px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.taxt-box {
+.container-text-box {
     display: flex;
     flex-direction: column;
-    width: 642px;
+    align-items: center;
+    justify-content: space-between;
     height: 120px;
     margin-top: 52px;
-    justify-content: space-between;
+    margin-bottom: 21px;
 }
 
-.box-name {
+.text-box {
+    width: 642px;
     height: 50px;
     border: 1px solid var(---color-dark-grey);
     border-radius: 4px;
-}
-
-.box-email {
-    height: 50px;
-    border: 1px solid var(---color-dark-grey);
-    border-radius: 4px;
+    font-size: 16px;  
 }
 
 ::placeholder {
-    font-size: 16px;
     padding-left: 22px;
 }
 
-.alternative-form {
+.form-questions {
+    margin-left: 74px;
+}
+
+.question {
+    font-size: 16px;
+    color: var(---color-dark-grey);
+}
+
+.platform-options {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    margin-left: 0px;
-    padding-left: 0px;
+    align-items: flex-start;
+    margin-bottom: 31px;
+}
+
+.option label {
+    font-size: 16px;
+    color: var(---color-dark-grey);
+}
+
+.notification {
+    font-size: 16px;
+    color: var(---color-dark-grey);
+}
+
+.container-selection-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 52px;
+    margin-top: 38px;
+}
+
+.send {
+    width: 244px;
+    height: 67px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: var(---color-red);
+    color: var(---color-white);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 26px;
+}
+
+.clean {
+    width: 244px;
+    height: 67px;
+    border-radius: 8px;
+    border: 2px solid var(---color-red);
+    background-color: var(---color-white);
+    color: var(---color-red);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 26px;
+}
+
+footer {
+    height: 190px;
+    background-color: var(---color-black);
+    color: var(---color-white);
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 74px;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: var(---color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
