@@ -229,8 +229,9 @@ header {
 .card-form {
     background-color: var(---color-light-grey);
     border-radius: 8px;
-    width: 790px;
-    height: 522px;
+    width: calc(100% - 20px);
+    max-width: 790px;
+    min-height: 522px;
     margin-bottom: 61px;
     display: flex;
     flex-direction: column;
@@ -249,7 +250,8 @@ header {
 }
 
 .text-box {
-    width: 642px;
+    width: calc(100% - 20px);
+    max-width: 642px;
     height: 50px;
     border: 1px solid var(---color-dark-grey);
     border-radius: 4px;
@@ -261,7 +263,9 @@ header {
 }
 
 .form-questions {
-    margin-left: 74px;
+    width: 100%;
+    max-width: 642px;
+    margin: 20px auto;
 }
 
 .question {
@@ -287,11 +291,11 @@ header {
 }
 
 .container-selection-button {
+    width: calc(100% - 50px);
+    max-width: 790px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 52px;
-    margin-top: 38px;
 }
 
 .send {
@@ -304,7 +308,7 @@ header {
     cursor: pointer;
     font-size: 18px;
     font-weight: 700;
-    margin: 0 26px;
+    margin: 10px 25px;
 }
 
 .clean {
@@ -317,21 +321,29 @@ header {
     cursor: pointer;
     font-size: 18px;
     font-weight: 700;
-    margin: 0 26px;
+    margin: 10px 25px;
 }
 
 footer {
     height: 190px;
+    max-height: 300px;
     background-color: var(---color-black);
     color: var(---color-white);
     font-size: 14px;
 }
 
 .footer-content {
+    width: calc(100% - 35px);
+    max-width: 960px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: 74px;
+}
+
+.footer-link {
+    margin: 0 37px;
 }
 
 .footer-link a {
